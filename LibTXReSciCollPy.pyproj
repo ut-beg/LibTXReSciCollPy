@@ -1,0 +1,58 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>c01490c8-df32-4437-889e-7f21b6f6b113</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>TestSciencebasePy.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>LibTXReSciCollPy</Name>
+    <RootNamespace>LibTXReSciCollPy</RootNamespace>
+    <InterpreterId>CondaEnv|CondaEnv|arcgispro-py3-clone</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="LibTXReSciCollPy.py" />
+    <Compile Include="LibTXReSciCollPy\RSCOGWellCorePhotos.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LibTXReSciCollPy\RSCRockCoreSample.py" />
+    <Compile Include="LibTXReSciCollPy\RSCSample.py" />
+    <Compile Include="LibTXReSciCollPy\RSCSampleFromOGWell.py" />
+    <Compile Include="LibTXReSciCollPy\RSCSamples.py" />
+    <Compile Include="LibTXReSciCollPy\__init__.py" />
+    <Compile Include="TestConvertCorePhotoData.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestSciencebasePy.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="LibTXReSciCollPy\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="CondaEnv|CondaEnv|arcgispro-py3-clone" />
+    <InterpreterReference Include="Global|PythonCore|3.9" />
+    <InterpreterReference Include="Global|VisualStudio|arcgispro-py3" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

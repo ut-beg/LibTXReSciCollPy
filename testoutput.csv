@@ -1,0 +1,2 @@
+localID,title,alternateTitle,abstract,coordinateLon,coordinateLat,publicationDate,alternateGeometry,onlineResource,browseGraphic,date,verticalExtent,IGSN,parentIGSN,relIGSN,relationType,largerWorkCitation
+11111,Test Title,Test Alternate title,Test abstract,-95.0,32.0,20230828,Test alternate geometry,https://www.beg.utexas.edu,https://www.beg.utexas.edu,20200130,"ft,1200.0,800",,00000000,00000002,Beans,Larger work citation test value
