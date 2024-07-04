@@ -3,8 +3,10 @@ LibTXReSciCollPy is a Python library for generating the item-level metadata file
 Installation:
 1.  Clone this repository
 2.  Copy ./LibTXReSciCollPy to your project directory
-3.  Import LibTXReSciCollPy in your Python script using the following
+3.  Import LibTXReSciCollPy in your Python script using the following:
+	```
 	import LibTXReSciCollPy as rsc
+	```
 
 Usage:  For a full usage example, see TestConvertCorePhotoData.py.  This file contains a typical example of item-level records being exported to the ReSciColl from an existing data source.
 
